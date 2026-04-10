@@ -7,7 +7,6 @@ Uses pytest fixtures and parametrize to test:
 - sort_by_population()
 """
 
-import os
 import pytest
 
 from population_sorter import (
