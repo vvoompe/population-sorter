@@ -1,0 +1,40 @@
+# Population Sorter
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Pytest
+.pytest_cache/
+pytest_cache/
+.coverage
+htmlcov/
+
+# pytest-html reports
+reports/
+*.html
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution
+dist/
+build/
+*.egg-info/
