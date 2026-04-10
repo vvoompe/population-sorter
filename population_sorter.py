@@ -55,3 +55,18 @@ def read_population_data(filepath):
             })
 
     return data
+
+
+def sort_by_area(data, ascending=False):
+    """
+    Sort population data by area.
+
+    Args:
+        data (list[dict]): List of country dicts with 'area' key.
+        ascending (bool): If True, sort ascending. Default is False
+                          (largest area first).
+
+    Returns:
+        list[dict]: New sorted list of country dictionaries.
+    """
+    return sorted(data, key=lambda x: x["area"], reverse=not ascending)
