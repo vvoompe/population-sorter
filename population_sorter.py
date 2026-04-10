@@ -70,3 +70,18 @@ def sort_by_area(data, ascending=False):
         list[dict]: New sorted list of country dictionaries.
     """
     return sorted(data, key=lambda x: x["area"], reverse=not ascending)
+
+
+def sort_by_population(data, ascending=False):
+    """
+    Sort population data by population count.
+
+    Args:
+        data (list[dict]): List of country dicts with 'population' key.
+        ascending (bool): If True, sort ascending. Default is False
+                          (most populated first).
+
+    Returns:
+        list[dict]: New sorted list of country dictionaries.
+    """
+    return sorted(data, key=lambda x: x["population"], reverse=not ascending)
